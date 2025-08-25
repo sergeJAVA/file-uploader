@@ -26,6 +26,6 @@ the service notifies another service, file-status-processor, of the successful c
 
 - Method: **POST**
 
-- URL: https://localhost:8443/upload
+- URL: `https://localhost:8443/upload`
 
 **Request:** The request must be of type multipart/form-data and include the file under the key **`file`**.
