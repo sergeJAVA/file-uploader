@@ -1,7 +1,6 @@
 package com.example.file_uploader.service.impl;
 
 import com.example.file_uploader.constant.FileStatus;
-import com.example.file_uploader.dto.CheckStatusRequest;
 import com.example.file_uploader.dto.FileDto;
 import com.example.file_uploader.dto.ResponseDto;
 import com.example.file_uploader.exception.FileAlreadyUploadedException;
