@@ -6,16 +6,20 @@ server:
     key-store-type: PKCS12
     key-store-password: password
 
+---
+
 spring:
   application:
     name: file-uploader
-  kafka:
-    bootstrap-servers: localhost:9092
-  servlet:
-    multipart:
-      max-file-size: 5MB
-      max-request-size: 5MB
 
-feign:
-  file-status-processor:
-    url: http://localhost:8083/status
+---
+
+spring:
+  profiles:
+    active: local
+  config:
+    import: configserver:http://localhost:8888
+  cloud:
+    config:
+      enabled: true
+      fail-fast: true
