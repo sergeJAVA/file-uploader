@@ -12,7 +12,7 @@ the service notifies another service, file-status-processor, of the successful c
 
 ---
 
-**The docker-compose.yml file for running data servers is located in the file-uploader service. It must be launched before all services are started.**
+**The docker-compose.yml file for running data servers is located in the `file-uploader` service. It must be launched before all services are started.**
 
 ---
 
