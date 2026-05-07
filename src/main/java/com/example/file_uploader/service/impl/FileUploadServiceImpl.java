@@ -42,7 +42,7 @@ public class FileUploadServiceImpl implements FileUploadService {
         if (!isFileUploaded(checksum)) {
             fileStatusProcessor.saveFile(FileDto.builder()
                             .checksum(checksum)
-                            .fileBytes(fileBytes)
+                            .fileBytes(null)
                             .fileName(file.getOriginalFilename())
                             .fileStatus(FileStatus.FILE_ACCEPTED)
                             .build()
